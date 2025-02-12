@@ -8,6 +8,7 @@ A real-time computer vision system that assists in playing Codenames board game 
 
 - **Python** - Core programming language
 - **OpenCV** - Image processing and video handling
+- **PyTorch** - Deep learning framework for model development and training
 - **YOLO (You Only Look Once)** - Real-time object detection for cards and key grid
 - **EasyOCR** - Text recognition for codename cards
 - **Tkinter** - GUI framework
@@ -15,6 +16,7 @@ A real-time computer vision system that assists in playing Codenames board game 
 - **Ultralytics** - YOLO implementation
 - **Threading** - Parallel processing for smooth video handling
 - **Docker** - Containerization and deployment
+
 
 ## Project Development Process
 

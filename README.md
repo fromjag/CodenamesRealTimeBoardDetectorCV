@@ -1,6 +1,6 @@
 # Codenames Real-Time Board Game Detector CV Project
 
-[Place for GIF/Video demo]
+![Project Demo](resources/showcase.gif)
 
 A real-time computer vision system that assists in playing Codenames board game by detecting and tracking card states using object detection and OCR. The system can identify revealed agent cards and maintain the game state while supporting both Spymaster and Field Agent roles.
 
@@ -16,7 +16,6 @@ A real-time computer vision system that assists in playing Codenames board game 
 - **Ultralytics** - YOLO implementation
 - **Threading** - Parallel processing for smooth video handling
 - **Docker** - Containerization and deployment
-
 
 ## Project Development Process
 
@@ -62,7 +61,23 @@ A real-time computer vision system that assists in playing Codenames board game 
 
 ## Docker Setup
 
-[Docker setup instructions to be added]
+### Prerequisites
+- Docker installed on your system
+- Git repository cloned locally
+
+### Building and Running
+
+1. Build the Docker image:
+```bash
+docker build -t codenames-cv .
+```
+
+2. Run the container:
+```bash
+docker run --device=/dev/video0:/dev/video0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix codenames-cv
+```
+
+Note: The `--device` flag is needed for camera access, and the display-related parameters are required for GUI functionality.
 
 ## Third-Party Tools and References
 
